@@ -1,0 +1,9 @@
+$primary: blue;
+$tertiary: goldenrod;
+
+$theme-colors: (
+  "tertiary": $tertiary,
+);
+
+
+@import "bootstrap/bootstrap";
