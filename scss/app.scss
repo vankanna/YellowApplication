@@ -1,21 +1,30 @@
+
 $primary: rgb(237, 214, 129);
+$secondary: blue;
 $progress-bar-bg: blue;
 
-#navbarsExampleDefault{
+#navbarsExampleDefault {
   background-color: #293C5A;
+  height: 200%;
 }
-.nav nav-tabs{
-  background-color: #A4A863;
+.nav nav-tabs {
+  background-color: white;
 }
+
 
 @import "bootstrap/bootstrap";
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  }
 
 nav {
-  background-color: #293C5A;
+  background-color: #A4A863;
+  color: #293C5A;
  }
 
 
+.col-3 {
+  background-color: white;
+}
+
+h4 {
+  background-color: #A4A863;
+}

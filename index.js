@@ -7,6 +7,7 @@ function addExperienceForm() {
 
 $( document ).ready(function() {
 
+
     $(".forward-progress").on('click', function(event){
         event.stopPropagation();
         event.stopImmediatePropagation();

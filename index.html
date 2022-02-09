@@ -11,43 +11,39 @@
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Yellowstone</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Yellowstone</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#" id="application-tab" data-toggle="tab" role="tab" aria-controls="apply" aria-selected="false">Step to Apply</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-<!--    <div class="tab-content" id="mytabcontent">-->
-<!--        <div class="tab-pane active" id="home" aria-labelledby="home-tab">-->
-<!--            <p>hello</p>-->
+    <div class="container-fluid" >
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Apply</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
 
-<!--        </div>-->
+    </div>
 
-<!--        <div class="tab-pane fade" id="apply" aria-labelledby="application-tab">-->
-<!--            <p>hi</p>-->
-<!--        </div>-->
-
-<!--    </div>-->
+</nav>
 
     <div class="container-fluid p-3">
 
         <div class="row container-fluid">
             <div class="col-3">
+                <div id="logo">
+                    <a class="navbar-brand " href="#">
+                        <img src="./img/logo.png" alt="" width="70%" height="70%" class="rounded mx-auto d-block">
+                    </a>
+                </div>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-link container-fluid font-weight-bold active" id="nav-personal-tab" data-toggle="tab" href="#nav-personal" role="tab" aria-controls="nav-personal" aria-selected="true">PERSONAL INFORMATION</a>
@@ -59,6 +55,7 @@
                     </div>
                 </nav>
                 <br/>
+
                 <div class="progress">
                     <div id="form-progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                 </div>
@@ -374,7 +371,7 @@
                                 <option>Wrangler/Driver </option>
                             </select>
                             <br>
-                            <label for="secondChoice">Third Choice</label>
+                            <label for="thirdChoice">Third Choice</label>
                             <select name="thirdChoice" class="form-control" id="thirdChoice" size="1">
                                 <option selected="selected" value=""> </option>
                                 <option>Dining Room Server Assistant*** </option>
@@ -485,15 +482,14 @@
                         <br>
                         <hr class="mb-4">
 
-
                         <p>If you'd like to apply
-                            for a different seasonal position or year round/long season position --<br>
+                            for a different seasonal position or year round/long season position<br>
                             please enter the name of the job into the following box.<br>
-                            </b></p>
-                        <input class="form-control" name="Other_Position" maxlength="60" size="60" type="text">
-                        <br>
+                            </p>
+                        <input class="form-control" name="Other_Position" maxlength="60" size="60" type="text"> <br>
+
                         <input value="Seasonal" name="Position_Type" checked="checked"  type="radio">
-                        Seasonal Position <br>
+                        Seasonal Position &nbsp;&nbsp;
                         <input value="Year Round" name="Position_Type" type="radio">
                         Year Round Position <br>
                         <hr class="mb-4">
@@ -530,7 +526,7 @@
 
                                 <div class="font-weight-bold p-3 text-center">
                                     Yes
-                                    <input name="Accept_Kitchen" value="Y" class="reqradio3" type="radio">
+                                    <input name="Accept_Kitchen" value="Y" class="reqradio3" type="radio">&nbsp;&nbsp;
                                     No
                                     <input name="Accept_Kitchen" value="N" class="reqradio3" type="radio">
                                 </div>
@@ -567,7 +563,6 @@
                     </div>
 
                     <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
-                        <div id="parent-experience-node">
                         <div id="experience-node" class="p-3">
                             <h4 class="mb-3 3">WORK EXPERIENCE</h4><br>
                             <p class="text-danger">* Start with the most recent position.</p>
@@ -582,13 +577,13 @@
                                     </div>
 
                                     <div class="col-md-6 mb-3">
-                                        <label for="phone">Telephone</label>
+                                        <label for="employerPhone">Telephone</label>
                                         <input type="tel" class="form-control" id="employerPhone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                                     </div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="address">Street Address or PO BOX Number</label>
+                                    <label for="POaddress">Street Address or PO BOX Number</label>
                                     <input type="text" class="form-control" id="POaddress" placeholder="1234 Main St" required>
                                     <div class="invalid-feedback">
 
@@ -660,16 +655,15 @@
                                     </div>
                                 </div>
 
-                                <div colspan="2" ><b>May we contact this employer?   <br>
+                                <div class="font-weight-bold">May we contact this employer?   <br>
                                     Yes
-                                    <input class="form-check-inline" name="Employer_1_Contact" value="Y" type="radio">
-                                    No</b>
+                                    <input class="form-check-inline" name="Employer_1_Contact" value="Y" type="radio"> &nbsp;
+                                    No
                                     <input class="form-check-inline" name="Employer_1_Contact" value="N" type="radio"></div>
                                 <hr class="mb-4">
                                 <div class="mb-3">
                                     <label for="duties">Specific Duites</label>
                                     <input type="text" class="form-control" id="duties">
-
                                 </div>
                                 <div class="mb-3">
                                     <label for="reason">Reason For Leaving</label>
@@ -677,8 +671,8 @@
                                 </div>
                             </form>
                         </div>
-                        </div>
-                        <div class="container offset-md-7">
+                        <div id="parent-experience-node"></div>
+                        <div class="offset-md-5">
                             <button onclick="addExperienceForm()" id="add" class="btn btn-primary btn-lg btn-block col-md-3 " type="button">Add</button>
                         </div>
                         <hr class="mb-4">
@@ -828,12 +822,13 @@
                                 <p>In accordance with the Immigration Reform and Control Act of 1986, upon acceptance for employment you will
                                             be required to provide proof of your identity and eligibility to work in the United States</p>
 
-                                <h5 class="font-weight-bolder text-danger">REQUIRED ENTRY</h5>
+                                <h7 class="font-weight-bolder text-danger">REQUIRED ENTRY</h7>
                                     <p>Can you provide proof that you are eligible to work in the United States?
-                                        Yes&nbsp;&nbsp;
-                                        <input name="APL-ELIG-WORK" value="Y" checked="checked" type="radio">
+                                        <div class="text-left font-weight-bolder">
+                                        Yes
+                                        <input name="APL-ELIG-WORK" value="Y" checked="checked" type="radio">&nbsp;&nbsp;
                                         No
-                                        <input name="APL-ELIG-WORK" value="N" type="radio">
+                                        <input name="APL-ELIG-WORK" value="N" type="radio"></div>
                                     </p>
                                     <br>
                                     <p class="font-weight-bolder text-danger">INTERNATIONAL APPLICANTS YOU MUST HAVE A SPONSORING
@@ -851,7 +846,7 @@
 
 
                                 <div>
-                                    <h5 class="font-weight-bolder text-danger">REQUIRED ENTRY</h5>
+                                    <h7 class="font-weight-bolder text-danger">REQUIRED ENTRY</h7>
                                     <p>
                                     Have you ever been convicted of a felony (including any pleas of
                                     "guilty" or
@@ -859,15 +854,14 @@
                                     Background Check is completed on all employees upon arrival to
                                     Yellowstone. (Note: Conviction of a crime is not an automatic ban to
                                     employment -
-                                         circumstances will be considered.)</p><br>
+                                         circumstances will be considered.)</p>
                                 </div>
                                 <div class="font-weight-bolder">
                                     Yes
-                                    <input name="Felony" value="Y" class="reqradio4" type="radio">&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="Felony" value="Y" class="reqradio4" type="radio">&nbsp;&nbsp
                                     No
                                     <input name="Felony" value="N" class="reqradio4" type="radio">
-                                    <br>
+                                    <br><br>
                                     If yes, state details and dates<br>
                                     <input name="Felony_Details" size="100" maxlength="150" type="TEXT">
                                     <br>
@@ -890,10 +884,12 @@
                             <form class="needs-validation" novalidate>
 
                                     <div>Have you ever worked for Xanterra Parks and Resorts, Amfac Park and Resorts, Fred Harvey or TWRS company?&nbsp;&nbsp;
-                                        Yes
-                                        <input name="APL-PREV-EMPLOY" value="Y" type="radio">&nbsp;&nbsp;
-                                        No
-                                        <input name="APL-PREV-EMPLOY" value="N" type="radio">
+                                        <div class="font-weight-bolder">
+                                            Yes
+                                            <input name="APL-PREV-EMPLOY" value="Y" type="radio">&nbsp;&nbsp;
+                                            No
+                                            <input name="APL-PREV-EMPLOY" value="N" type="radio">
+                                        </div>
                                         <br>
                                         Please enter your employee number:&nbsp;
                                         <input name="APL-PREV-EMP-NBR" size="10" maxlength="15" type="text">
@@ -938,10 +934,12 @@
                                 <div>
                                     <div>Have you ever been employed under a different name with any Xanterra Parks and Resorts, Amfac Parks and Resorts,
                                         Fred Harvey or TWRS company?
-                                        Yes
-                                        <input name="Employed_Different_Name" value="Y" type="radio">&nbsp;&nbsp;
-                                        No
-                                        <input name="Employed_Different_Name" value="N" type="radio">
+                                        <div class="font-weight-bolder">
+                                            Yes
+                                            <input name="Employed_Different_Name" value="Y" type="radio">&nbsp;&nbsp;
+                                            No
+                                            <input name="Employed_Different_Name" value="N" type="radio">
+                                        </div>
                                         <br>
                                         If yes, indicate the
                                         name(s)
@@ -976,46 +974,49 @@
                                         <br>
                                         <hr></div>
                                 </div>
-                                <div>
-                                    <div>Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service employee?
+
+                                <div>Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service employee?
+                                    <div class="font-weight-bolder">
                                         Yes
                                         <input name="Spouse_NPS_Employee" value="Y" type="radio">&nbsp;&nbsp;
                                         No
                                         <input name="Spouse_NPS_Employee" value="N" type="radio">
-                                        <br>
-                                        If yes, indicate the name(s)
-                                        <input name="NPS_Spouse_Name" maxlength="50" size="50" type="text">
-                                        and location(s) of the NPS
-                                        employee.
-                                        <select name="NPS_Spouse_Location">
-                                            <option selected="selected" value="">Select One</option>
-                                            <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                            <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                            <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                            <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                            <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                            <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                            <option value="GENEVA MARINA">Geneva Marina</option>
-                                            <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                            <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                            <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                            <option value="HUESTON WOODS">Hueston Woods</option>
-                                            <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                            <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                            <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                            <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                            <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                            <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                            <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                            <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                            <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                            <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                            <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                            <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                        </select>
-                                        <br>
-                                        <hr></div>
+                                    </div>
+                                    <br>
+                                    If yes, indicate the name(s)
+                                    <input name="NPS_Spouse_Name" maxlength="50" size="50" type="text">
+                                    and location(s) of the NPS
+                                    employee.
+                                    <select name="NPS_Spouse_Location">
+                                        <option selected="selected" value="">Select One</option>
+                                        <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
+                                        <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                        <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                        <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
+                                        <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
+                                        <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
+                                        <option value="GENEVA MARINA">Geneva Marina</option>
+                                        <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                        <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
+                                        <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
+                                        <option value="HUESTON WOODS">Hueston Woods</option>
+                                        <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
+                                        <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
+                                        <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                        <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
+                                        <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                        <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
+                                        <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                        <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                        <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
+                                        <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                        <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
+                                        <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                    </select>
+                                    <br>
+                                    <hr>
                                 </div>
+
                                 <div>
                                     <div>For certain positions and certain reporting relationships, we are unable to employ
                                         family relatives. Please identify relative(s) currently employed by Xanterra Parks and Resorts,
@@ -1029,16 +1030,20 @@
                                         <input class="form-control-sm" name="Friend_Applying_Details_Name" maxlength="60" size="60" type="text">
                                         <br>
                                             Are you traveling together?
+                                        <div class="font-weight-bolder">
                                             Yes
                                             <input value="traveling together" name="Friend_Applying_Details_Together" type="radio">&nbsp;&nbsp;
                                             No
                                             <input value="" name="Friend_Applying_Details_Together" type="radio">
+                                        </div>
                                             (Dates should match if yes) <br>
                                             Do you want to work in the same location?
-                                            Yes
-                                            <input value="work same location" name="Friend_Applying_Details_Location" type="radio">&nbsp;&nbsp;
-                                            No
-                                            <input value="" name="Friend_Applying_Details_Location" type="radio">
+                                            <div class="font-weight-bolder">
+                                                Yes
+                                                <input value="work same location" name="Friend_Applying_Details_Location" type="radio">&nbsp;&nbsp;
+                                                No
+                                                <input value="" name="Friend_Applying_Details_Location" type="radio">
+                                            </div>
 
                                         <hr></div>
                                 </div>
@@ -1065,10 +1070,11 @@
                                         <div class="font-weight-bold font-italic text-danger">REQUIRED ENTRY</div>
                                         You must be 18 years of age or older to live in employee housing. Will
                                         you be 18 years of age or older when you arrive in Yellowstone?<br>
+                                        <div class="font-weight-bolder text-center">
                                         Yes
                                         <input name="18_or_Older" value="Y" class="reqradio5" type="radio">&nbsp;&nbsp;
                                         No
-                                        <input name="18_or_Older" id="r4" value="N" class="reqradio5" type="radio">
+                                        <input name="18_or_Older" id="r4" value="N" class="reqradio5" type="radio"></div>
                                         <br>
                                     </div>
 
@@ -1076,74 +1082,87 @@
                                         <div class="font-weight-bold font-italic text-danger">REQUIRED ENTRY</div>
                                         Employees must be 21 years of age or older for jobs requiring the operation of certain vehicles or serving
                                         alcohol in lounges/pubs. Are you 21 years of age or older?<br>
+                                        <div class="font-weight-bolder text-center">
                                         Yes
                                         <input name="Over_21" value="Y" class="reqradio6" type="radio">&nbsp;&nbsp;
                                         No
-                                        <input name="Over_21" value="N" class="reqradio6" type="radio">
+                                        <input name="Over_21" value="N" class="reqradio6" type="radio"></div>
                                         <br>
                                     </div>
                                 </div>
                                 <hr>
 
                                 <div><br>
-                                            If you have read, understand and agree to the above information, please check this box
-                                            <input name="Agreement_To_Terms" value="X" id="termsbox" type="CHECKBOX">
+                                    If you have read, understand and agree to the above information, please check this box
+                                    <input name="Agreement_To_Terms" value="X" id="termsbox" type="CHECKBOX">
 
-                                        <p> <br>
-                                            Please do not submit more than one application per season--we will only
-                                            review ONE application per person. For changes, please e-mail your
-                                            information to info@yellowstonejobs.com.<br>
-                                        </p>
-
-                                    <div class="modal" tabindex="-1">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">AGREEMENT TO TERMS</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p> <span class="font-weight-bolder">READ CAREFULLY BEFORE SUBMITTING THIS APPLICATION</span><br>
-                                                        By submitting this form, I declare my answers to the questions on this application and any attachment, i.e. resume,
-                                                        etc., are true and accurate. Attachments CANNOT be sent with this online application. You must send attachments
-                                                        to us by e-mail or fax. FAX:(307) 344-5441 E-mail: <a href="mailto:info@yellowstonejobs.com">info@yellowstonejobs.com</a>.
-                                                        I authorize Xanterra Parks and Resorts and any accredited
-                                                        public or private investigative agency or individual conducting my background investigation
-                                                        to obtain and release any information relating to my background from individuals, schools,
-                                                        employers, criminal justice agencies, governmental agencies, financial institutions,
-                                                        credit bureaus, licensing agencies, or other sources of information in accordance with
-                                                        applicable laws for purposes of making a determination of my suitability or eligibility
-                                                        for employment. If employed, I understand that I must abide by the company's rules and
-                                                        regulations. I hereby consent to a drug screen as a condition of employment, if required.
-                                                        I understand this document, any offer of employment or any other employment related
-                                                        information does not constitute an employment contract. I understand employment is not
-                                                        a specified term and is at the mutual consent of the employee and company. Accordingly,
-                                                        either the employee or the company can terminate employment at will, with or without
-                                                        cause, at any time.  </p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary">YES</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p> <br>
+                                        Please do not submit more than one application per season--we will only
+                                        review ONE application per person. For changes, please e-mail your
+                                        information to info@yellowstonejobs.com.<br>
+                                    </p>
 
                                 </div>
+
+
                             </form>
                         </div>
                         <hr class="mb-4">
-                        <div class="col-md-3 offset-md-4">
-                            <button onclick="$('#nav-general-tab').tab('show')" id="submit" class="btn btn-primary btn-lg btn-block forward-progress" type="button">Submit</button></div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Submit
+                        </button>
+
+                        <br><br>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">AGREEMENT TO TERMS</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p> <span class="font-weight-bolder">READ CAREFULLY BEFORE SUBMITTING THIS APPLICATION</span><br>
+                                            By submitting this form, I declare my answers to the questions on this application and any attachment, i.e. resume,
+                                            etc., are true and accurate. Attachments CANNOT be sent with this online application. You must send attachments
+                                            to us by e-mail or fax. FAX:(307) 344-5441 E-mail: <a class="text-secondary"href="mailto:info@yellowstonejobs.com">info@yellowstonejobs.com</a>.
+                                            I authorize Xanterra Parks and Resorts and any accredited
+                                            public or private investigative agency or individual conducting my background investigation
+                                            to obtain and release any information relating to my background from individuals, schools,
+                                            employers, criminal justice agencies, governmental agencies, financial institutions,
+                                            credit bureaus, licensing agencies, or other sources of information in accordance with
+                                            applicable laws for purposes of making a determination of my suitability or eligibility
+                                            for employment. If employed, I understand that I must abide by the company's rules and
+                                            regulations. I hereby consent to a drug screen as a condition of employment, if required.
+                                            I understand this document, any offer of employment or any other employment related
+                                            information does not constitute an employment contract. I understand employment is not
+                                            a specified term and is at the mutual consent of the employee and company. Accordingly,
+                                            either the employee or the company can terminate employment at will, with or without
+                                            cause, at any time.  </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary forward-progress" data-dismiss="modal">YES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
      <script src="./dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
     <script src="./index.js"></script>
 
 
