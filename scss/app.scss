@@ -1,5 +1,21 @@
-$primary: goldenrod;
+$primary: rgb(237, 214, 129);
+$progress-bar-bg: blue;
 
-
+#navbarsExampleDefault{
+  background-color: #293C5A;
+}
+.nav nav-tabs{
+  background-color: #A4A863;
+}
 
 @import "bootstrap/bootstrap";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  }
+
+nav {
+  background-color: #293C5A;
+ }
+
+

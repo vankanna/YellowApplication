@@ -1,0 +1,3 @@
+sass scss/app.scss css/bootstrap.min.css
+
+sass --watch --style=compressed scss/app.scss dist/css/bootstrap.min.css
